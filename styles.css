@@ -119,8 +119,12 @@ body {
     background-color: rgba(238, 241, 244, 0.7); /* Harmaa tausta */
     padding: 20px; /* Sisennys */
     border-radius: 10px; /* Pyöristetyt kulmat */
-    width: 40%; /* Leveys 40% */
+    width: 50%; /* Leveys 50% */
     margin: 20px auto; /* Keskittää vaakasuunnassa */
+    hyphens: auto; /* Ota tavutus käyttöön */
+    -webkit-hyphens: auto; /* Tavutus Webkit-pohjaisille selaimille */
+    -ms-hyphens: auto; /* Tavutus IE10+ */
+    word-break: break-word;
 }
 
 /* Sisällön otsikon tyylit */
