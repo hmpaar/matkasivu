@@ -224,10 +224,6 @@ h1, p {
     }
 }
 @media (max-width: 480px) {
-    .header {
-        flex: 0; /* Ei kasva */
-        text-align: center; /* Tekstin keskitys */
-    }
     .content {
         transform: scale(0.8); /* Pienentää koko ruutua 80% */
         transform-origin: top left; /* Asettaa skaalauspisteen vasempaan yläkulmaan */
