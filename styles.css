@@ -253,5 +253,8 @@ h1, p {
     .text-box {
         width: 90%; /* Leveys 90% pienemmillä näytöillä */
         font-size: 1.2em; /* Suurentaa tekstin kokoa */
+    }.image-block {
+        flex: 0 0 100%; /* Asettaa kortin leveydeksi 100% */
+        margin: 10px 0; /* Lisää marginaalin ylhäältä ja alhaalta */
     }
 }
