@@ -40,6 +40,7 @@
             <div class="carousel-indicators"> <!-- Karusellin indikaattorit -->
                 <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner"> <!-- Karusellin sisältö -->
                 <div class="carousel-item active"> <!-- Karusellin ensimmäinen kuva -->
@@ -85,6 +86,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item"> <!-- Karusellin kolmas kuva -->
+                    <div class="image-section"> <!-- Kuvasektio -->
+                        <div class="image-block"> <!-- Kuvablokki -->
+                            <h2>Turku</h2> <!-- Kuvan otsikko -->
+                            <p>Turku on Suomen vanhin kaupunki ja kulttuurin kehto. Aurajoen rannat, historiallinen Turun linna ja 
+                                modernit museot tarjoavat monipuolisia elämyksiä. Turku on myös tunnettu vilkkaasta ravintola- ja 
+                                kahvilakulttuuristaan sekä tapahtumistaan, jotka houkuttelevat kävijöitä ympäri vuoden.</p> <!-- Kuvan esittelyteksti -->
+                            <img src="kuvat/Turku.jpg" alt="Turku" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city5Modal"> <!-- Kuvan lähde -->
+                            <p><a href="#" data-bs-toggle="modal" data-bs-target="#city5Modal">Lisätietoa</a></p> <!-- Linkki lisätietoihin -->
+                        </div>
+                        <div class="image-block"> <!-- Kuvablokki -->
+                            <h2>Helsinki</h2> <!-- Kuvan otsikko -->
+                            <p>Helsinki on Suomen pääkaupunki, jossa yhdistyvät moderni arkkitehtuuri, merelliset maisemat ja 
+                                vilkas kaupunkielämä. Kaupungin monipuoliset museot, designliikkeet ja ravintolat tarjoavat 
+                                elämyksiä jokaiseen makuun. Helsinki on myös portti Suomen saaristoon ja tarjoaa upeita 
+                                mahdollisuuksia merellisiin seikkailuihin.</p> <!-- Kuvan esittelyteksti -->
+                            <img src="kuvat/Helsinki.jpg" alt="Helsinki" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city6Modal"> <!-- Kuvan lähde -->
+                            <p><a href="#" data-bs-toggle="modal" data-bs-target="#city6Modal">Lisätietoa</a></p> <!-- Linkki lisätietoihin -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#cityCarousel" data-bs-slide="prev"> <!-- Karusellin edellinen nappi -->
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -105,21 +127,15 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                    <div class="row single-item">
+                        <div class="col-md-12">
+                            <h6>Teeleidi ❤️❤️❤️</h6> <!-- Kohteen otsikko -->
+                            <p>Teeleidin teehuone Lutakossa kutsuu nauttimaan tunnelmallisesta ilmapiiristä ja herkullisista tarjoiluista. 
+                                Paikka tarjoaa laajan valikoiman korkealaatuisia irtoteitä, valmiita teepakkauksia, herkkuja ja tarvikkeita, 
+                                jotka tekevät jokaisesta teehetkestä erityisen. Tutustu Teeleidin maailmaan ja löydä uusia suosikkimakuja! 
+                                Tämä on Jyväskylän yksi pakollisista vierailukohteista!</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Jyväskylä2.jpg" alt="Teeleidi" class="responsive-image"> <!-- Kohteen kuva -->
+                            <p>Lisää kohteita tulossa toukokuussa 2025.</p> <!-- Lisätietoteksti -->
                         </div>
                     </div>
                 </div>
@@ -166,6 +182,26 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
+                        <div class="col-md-12 centered-info">
+                            <img src="kuvat/Hossa1.jpg" alt="Hossa" class="responsive-image"> <!-- Kohteen kuva -->
+                            <br><br>
+                            <p>Lisätietoa tulossa tästä kohteesta toukokuussa 2025.</p> <!-- Kohteen esittelyteksti -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="city4Modal" tabindex="-1" aria-labelledby="city4ModalLabel" aria-hidden="true"> <!-- Koli-modali -->
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="city4ModalLabel">Koli</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <div class="row">
                         <div class="col-md-4">
                             <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
                             <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
@@ -187,11 +223,41 @@
         </div>
     </div>
 
-    <div class="modal fade" id="city4Modal" tabindex="-1" aria-labelledby="city4ModalLabel" aria-hidden="true"> <!-- Koli-modali -->
+    <div class="modal fade" id="city5Modal" tabindex="-1" aria-labelledby="city5ModalLabel" aria-hidden="true"> <!-- Turku-modali -->
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="city4ModalLabel">Koli</h5> <!-- Modalin otsikko -->
+                    <h5 class="modal-title" id="city5ModalLabel">Turku</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="city6Modal" tabindex="-1" aria-labelledby="city6ModalLabel" aria-hidden="true"> <!-- Helsinki-modali -->
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="city6ModalLabel">Helsinki</h5> <!-- Modalin otsikko -->
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
                 </div>
                 <div class="modal-body">

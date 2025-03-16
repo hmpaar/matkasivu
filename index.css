@@ -150,11 +150,11 @@ h1, p {
     border-radius: 10px; /* Pyöristetyt kulmat */
     width: 50%; /* Leveys 50% */
     margin: 20px auto; /* Keskittää vaakasuunnassa */
-    hyphens: auto; /* Ota tavutus käyttöön */
+hyphens: auto; /* Ota tavutus käyttöön */
     -webkit-hyphens: auto; /* Tavutus Webkit-pohjaisille selaimille */
     -ms-hyphens: auto; /* Tavutus IE10+ */
-    word-break: break-word;
-}
+word-break: break-word;
+}    
 
 /* Keskittää modaalin */
 .modal-dialog {

@@ -201,6 +201,7 @@ h1, p {
     border-radius: 10px; /* Pyöristetyt kulmat */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Varjostus */
     margin: 10px; /* Marginaali */
+    max-width: 50%; /* Maksimileveys */
 }
 
 /* Määrittää modaalin sisällön kolumnin otsikon ulkoasun */
@@ -218,6 +219,33 @@ h1, p {
     width: 100%; /* Leveys 100% */
     height: auto; /* Automaattinen korkeus */
     border-radius: 10px; /* Pyöristetyt kulmat */
+}
+
+/* Määrittää modaalin sisällön keskitetyn tiedon ulkoasun */
+.modal-body .centered-info {
+    display: flex; /* Flexbox-asettelu */
+    flex-direction: column; /* Asettaa flex-suunnan pystysuunnassa */
+    align-items: center; /* Keskittää vaakasuunnassa */
+    justify-content: center; /* Keskittää pystysuunnassa */
+    text-align: center; /* Tekstin keskitys */
+}
+
+/* Määrittää modaalin otsikon ulkoasun */
+.modal-title {
+    text-align: center; /* Keskittää otsikon */
+    width: 100%; /* Varmistaa, että otsikko vie koko leveyden */
+}
+
+.modal-body .single-item {
+    text-align: center; /* Tekstin keskitys */
+    background-color: white; /* Taustaväri */
+    padding: 20px; /* Sisennys */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Varjostus */
+    margin: 10px; /* Marginaali */
+    max-width: 50%; /* Maksimileveys */
+    width: 80%; /* Leveys 80% */
+    margin: 0 auto; /* Keskittää vaakasuunnassa */
 }
 
 /* Responsiiviset tyylit */
@@ -254,7 +282,11 @@ h1, p {
         width: 90%; /* Leveys 90% pienemmillä näytöillä */
         font-size: 1.2em; /* Suurentaa tekstin kokoa */
     }.image-block {
-        flex: 0 0 100%; /* Asettaa kortin leveydeksi 100% */
+        flex: 0 0 90%; /* Asettaa kortin leveydeksi 100% */
         margin: 10px 0; /* Lisää marginaalin ylhäältä ja alhaalta */
+    }
+    .image-section {
+        flex-direction: column; /* Asettaa kortit allekkain */
+        align-items: center; /* Keskittää kortit */
     }
 }
