@@ -268,16 +268,6 @@ h1, p {
     width: 100%; /* Varmistaa, että otsikko vie koko leveyden */
 }
 
-.modal-body .single-item {
-    text-align: center; /* Tekstin keskitys */
-    background-color: white; /* Taustaväri */
-    padding: 10px; /* Sisennys */
-    border-radius: 10px; /* Pyöristetyt kulmat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Varjostus */
-    margin: 10px; /* Marginaali */
-    width: 70%; /* Leveys 70% */
-    margin: 0 auto; /* Keskittää vaakasuunnassa */
-}
 .centered-text {
     text-align: center; /* Keskittää tekstin */
     margin-top: 20px; /* Lisää marginaalia yläpuolelle */
