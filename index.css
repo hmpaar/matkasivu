@@ -223,3 +223,8 @@ h1, p {
         width: 70%; /* Leveys 70% pienemmillä näytöillä */
     }
 }
+@media (max-width: 480px) {
+    .text-box {
+        width: 80%; /* Leveys 70% pienemmillä näytöillä */
+    }
+}
