@@ -153,6 +153,7 @@ h1, p {
     hyphens: auto; /* Ota tavutus käyttöön */
     -webkit-hyphens: auto; /* Tavutus Webkit-pohjaisille selaimille */
     -ms-hyphens: auto; /* Tavutus IE10+ */
+    word-break: break-word;
 }
 
 /* Keskittää modaalin */
