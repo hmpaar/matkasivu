@@ -150,6 +150,9 @@ h1, p {
     border-radius: 10px; /* Pyöristetyt kulmat */
     width: 50%; /* Leveys 50% */
     margin: 20px auto; /* Keskittää vaakasuunnassa */
+    hyphens: auto; /* Ota tavutus käyttöön */
+    -webkit-hyphens: auto; /* Tavutus Webkit-pohjaisille selaimille */
+    -ms-hyphens: auto; /* Tavutus IE10+ */
 }
 
 /* Keskittää modaalin */
@@ -233,6 +236,5 @@ h1, p {
     .text-box {
         width: 90%; /* Leveys 90% pienemmillä näytöillä */
         font-size: 1.2em; /* Suurentaa tekstin kokoa */
-        line-height: 1.5; /* Lisää riviväliä */
     }
 }
