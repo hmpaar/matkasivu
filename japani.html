@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8"> <!-- Määrittää dokumentin merkistön UTF-8:ksi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsiivinen asettelu -->
+    <title>Japani</title> <!-- Sivun otsikko -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Yhteinen tyylitiedosto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome ikonit -->
+</head>
+<body>
+    <header class="header"> <!-- Sivun yläosa -->
+        <nav class="navbar"> <!-- Navigointipalkki -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <!-- Dropdown-nappi -->
+                <span class="navbar-toggler-icon"></span> <!-- Ikoni dropdown-napille -->
+            </button>
+            <ul class="dropdown-menu"> <!-- Dropdown-valikko -->
+                <li><a class="dropdown-item" href="etusivu.html">Etusivu</a></li> <!-- Linkki etusivulle -->
+                <li><a class="dropdown-item" href="suomi.html">Suomi</a></li> <!-- Linkki Suomi-sivulle -->
+                <li><a class="dropdown-item" href="eurooppa.html">Eurooppa</a></li> <!-- Linkki Eurooppa-sivulle -->
+                <li><a class="dropdown-item" href="japani.html">Japani</a></li> <!-- Linkki Japani-sivulle -->
+                <li><a class="dropdown-item" href="yhteydenotto.html">Yhteydenotto</a></li> <!-- Linkki Yhteydenotto-sivulle -->
+            </ul>
+        </nav>
+        <h1>Japani</h1> <!-- Sivun pääotsikko -->
+    </header>
+    <main class="content"> <!-- Sivun pääsisältö -->
+        <div class="hero-section" style="background-image: url('kuvat/Tokio.jpg');">  <!-- Taustakuva -->
+            <p class="text-box">Japani on kiehtova yhdistelmä perinteitä ja futurismia - samana päivänä voit ihastella 
+                kirsikankukkia zen-puutarhassa ja sukeltaa vilkkaan metropolin valomereen. Jokainen kaupunki ja alue 
+                tarjoaa oman ainutlaatuisen tunnelmansa, oli kyseessä sitten Kioton temppelit, Tokion trendikkäät 
+                kaupunginosat tai Hokkaidon lumiset maisemat. Erinomaisen ruoan, ystävällisten ihmisten ja monipuolisten 
+                nähtävyyksien ansiosta Japani ei ole vain matkakohde - se on elämys, joka tempaa mukaansa ja jättää 
+                lähtemättömän vaikutuksen.</p> <!-- Taustakuvan teksti -->
+        </div>
+        <div id="cityCarousel" class="carousel slide" data-bs-ride="carousel"> <!-- Kuvakaruselli -->
+            <div class="carousel-indicators"> <!-- Karusellin indikaattorit -->
+                <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner"> <!-- Karusellin sisältö -->
+                <div class="carousel-item active"> <!-- Karusellin ensimmäinen kuva -->
+                    <div class="image-section"> <!-- Kuvasektio -->
+                        <div class="image-block"> <!-- Kuvablokki -->
+                            <h2>Tokio</h2> <!-- Kuvan otsikko -->
+                            <p>Tokio on futuristinen metropoli, joka tarjoaa ostosmahdollisuuksia, viihdettä ja huipputeknologiaa. 
+                                Kaupunki sykkii nopeaa tahtia, mutta se tarjoaa myös rauhallisia paikkoja, kuten temppeleitä ja 
+                                puutarhoja. Tokio on täynnä kontrasteja - vilkkaat neonvalot ja perinteiset puistot elävät sulassa 
+                                sovussa.</p> <!-- Kuvan esittelyteksti -->
+                            <img src="kuvat/Tokio3.jpg" alt="Tokio" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city1Modal"> <!-- Kuvan lähde -->
+                        </div>
+                        <div class="image-block"> <!-- Kuvablokki -->
+                            <h2>Osaka</h2> <!-- Kuvan otsikko -->
+                            <p>Osaka on ruokaparatiisi, joka tunnetaan eloisasta ilmapiiristään ja herkullisesta street foodista. 
+                                Täällä voit nauttia klassisista ruokalajeista, kuten takoyakista ja okonomiyakista, samalla kun 
+                                tutustut kaupungin vilkkaaseen yöelämään ja moderniin arkkitehtuuriin. Osakan energinen tunnelma 
+                                ja makuelämykset tekevät siitä ainutlaatuisen matkakohteen.</p> <!-- Kuvan esittelyteksti -->
+                            <img src="kuvat/Tokio5.jpg" alt="Osaka" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city2Modal"> <!-- Kuvan lähde -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"> <!-- Karusellin toinen kuva -->
+                    <div class="image-section"> <!-- Kuvasektio -->
+                        <div class="image-block"> <!-- Kuvablokki -->
+                            <h2>Kioto</h2> <!-- Kuvan otsikko -->
+                            <p>Kioto on perinteisen Japanin sydän, jossa voi vierailla historiallisissa temppeleissä ja kokea 
+                                geishakulttuurin. Tämä entinen keisarillinen pääkaupunki on täynnä kulttuurihistoriallisia kohteita, 
+                                kuten Kinkaku-ji ja Fushimi Inari-taisha. Kioto on rauhallinen ja tunnelmallinen, ja se vie matkailijat 
+                                suoraan Japanin perinteisiin.</p> <!-- Kuvan esittelyteksti -->
+                            <img src="kuvat/Tokio6.jpg" alt="Kioto" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city3Modal"> <!-- Kuvan lähde -->
+                        </div>
+                        <div class="image-block"> <!-- Kuvablokki -->
+                            <h2>Nara</h2> <!-- Kuvan otsikko -->
+                            <p>Nara on muinainen pääkaupunki, jossa temppelit, peurat ja perinteinen kulttuuri luovat ainutlaatuisen 
+                                tunnelman. Naran kuuluisat temppelit kuten Todai-ji ja sen suuri Buddha-patsas, ovat pakollisia nähtävyyksiä. 
+                                Kaupungin rauhalliset puistot ja vapaasti kuljeskelevat peurat tekevät Naran vierailusta unohtumattoman elämyksen.</p> <!-- Kuvan esittelyteksti -->
+                            <img src="kuvat/Tokio7.jpg" alt="Nara" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city4Modal"> <!-- Kuvan lähde -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cityCarousel" data-bs-slide="prev"> <!-- Karusellin edellinen nappi -->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cityCarousel" data-bs-slide="next"> <!-- Karusellin seuraava nappi -->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Modalit -->
+    <div class="modal fade" id="city1Modal" tabindex="-1" aria-labelledby="city1ModalLabel" aria-hidden="true"> <!-- Tokio-modali -->
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="city1ModalLabel">Tokio</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="city2Modal" tabindex="-1" aria-labelledby="city2ModalLabel" aria-hidden="true"> <!-- Osaka-modali -->
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="city2ModalLabel">Osaka</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="city3Modal" tabindex="-1" aria-labelledby="city3ModalLabel" aria-hidden="true"> <!-- Kioto-modali -->
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="city3ModalLabel">Kioto</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="city4Modal" tabindex="-1" aria-labelledby="city4ModalLabel" aria-hidden="true"> <!-- Nara-modali -->
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="city4ModalLabel">Nara</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
+                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
+                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer"> <!-- Sivun alatunniste -->
+        <div class="footer-left"> <!-- Alatunnisteen vasen osa -->
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram social-icon"></i></a> <!-- Instagram-linkki -->
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f social-icon"></i></a> <!-- Facebook-linkki -->
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok social-icon"></i></a> <!-- TikTok-linkki -->
+        </div>
+        <div class="footer-center"> <!-- Alatunnisteen keskiosa -->
+            <img src="kuvat/logo.png" alt="Logo" class="logo"> <!-- Logo -->
+        </div>
+        <div class="footer-right"> <!-- Alatunnisteen oikea osa -->
+            <p>© 2025 ReissuUnelmat</p> <!-- Tekijänoikeustiedot -->
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
+</body>
+</html>

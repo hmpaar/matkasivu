@@ -1,0 +1,213 @@
+/* Määrittää sivuston ulkoasun */
+body {
+    background-color: #eef1f4; /* Vaalea harmaa tausta */
+    font-family: Arial, sans-serif; /* Fontti */
+    display: flex; /* Flexbox-asettelu */
+    flex-direction: column; /* Flexbox-suunta pystysuunnassa */
+    min-height: 100vh; /* Vähimmäiskorkeus 100% näkymäkorkeudesta */
+    margin: 0; /* Poistaa oletusmarginaalit */
+}
+
+/* Määrittää sivuston ylä- ja alatunnisteen ulkoasun */
+.header, .footer {
+    background-color: #48D1CC; /* Taustaväri */
+    color: black; /* Tekstin väri */
+    text-align: center; /* Tekstin keskitys */
+    padding: 15px 0; /* Sisennys ylhäältä ja alhaalta */
+}
+
+/* Määrittää yläreunan ulkoasun */
+.header {
+    position: sticky; /* Kiinnittää yläreunaan */
+    top: 0; /* Yläreunaan kiinnitys */
+    width: 100%; /* Leveys 100% */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: space-between; /* Jakaa tilan tasaisesti */
+    align-items: center; /* Kohdistaa keskelle pystysuunnassa */
+    padding: 10px 20px; /* Lisää hieman tilaa reunoille */
+    z-index: 1000; /* Lisää tämä rivi */
+}
+
+/* Määrittää otsikon ulkoasun */
+.header h1 {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    text-align: center; /* Tekstin keskitys */
+}
+
+/* Määrittää navigaatiopalkin ulkoasun */
+.navbar {
+    background-color: transparent; /* Poistaa ylimääräisen värityksen */
+}
+
+/* Määrittää navigaatiopalkin avauspainikkeen ulkoasun */
+.navbar-toggler {
+    border: none; /* Poistaa laatikkoviivat */
+}
+
+/* Määrittää navigaatiopalkin avauspainikkeen kuvan */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Dropdown-ikonin kuva */
+}
+
+/* Dropdown-valikon tyylit */
+.navbar-nav {
+    position: relative; /* Suhteellinen sijainti */
+}
+
+/* Dropdown-valikon tyylit */
+.navbar-nav .dropdown-menu {
+    position: absolute; /* Absoluuttinen sijainti */
+    top: 100%; /* Sijainti ylhäältä */
+    left: 0; /* Sijainti vasemmalta */
+    display: none; /* Piilotettu oletuksena */
+    background-color: #48D1CC; /* Taustaväri */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Varjostus */
+}
+
+/* Näyttää valikon kun avattu */
+.navbar-toggler[aria-expanded="true"] + .dropdown-menu {
+    display: block; /* Näyttää valikon kun avattu */
+}
+
+/* Dropdown-valikon linkkien tyylit */
+.navbar-nav .dropdown-item {
+    color: black; /* Tekstin väri */
+    padding: 10px 20px; /* Sisennys */
+    text-decoration: none; /* Poistaa alleviivauksen */
+    display: block; /* Näyttää elementtinä */
+}
+
+/* Dropdown-valikon linkkien hover-tyylit */
+.navbar-nav .dropdown-item:hover {
+    background-color: #d8dbde; /* Taustaväri hover-tilassa */
+}
+
+/* Määrittää alatunnisteen ulkoasun */
+.footer {
+    margin-top: auto; /* Työntää alatunnisteen alas */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    align-items: center; /* Keskittää pystysuunnassa */
+    padding: 10px 20px; /* Sisennys */
+}
+
+/* Määrittää alatunnisteen osat */
+.footer-left, .footer-center, .footer-right {
+    display: flex; /* Flexbox-asettelu */
+    align-items: center; /* Keskittää pystysuunnassa */
+}
+
+/* Määrittää alatunnisteen vasemman osan */
+.footer-left {
+    flex: 1; /* Kasvaa täyttämään tilan */
+}
+
+/* Määrittää alatunnisteen keskiosan */
+.footer-center {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    text-align: center; /* Tekstin keskitys */
+}
+
+/* Määrittää alatunnisteen oikean osan */
+.footer-right {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    justify-content: flex-end; /* Kohdistaa oikealle */
+    text-align: center; /* Tekstin keskitys pystysuunnassa */
+    padding-top: 10px; /* Sisennys ylhäältä */
+}
+
+/* Sosiaalisten medioiden ikonien tyylit */
+.social-icon {
+    font-size: 30px; /* Fonttikoko */
+    margin: 0 10px; /* Marginaali */
+    color: black; /* Tekstin väri */
+}
+
+/* Logon tyylit */
+.logo {
+    width: 50px; /* Leveys */
+    height: auto; /* Automaattinen korkeus */
+}
+
+/* Yhteydenotto-sivun tyylit */
+.contact-container {
+    display: flex; /* Flexbox-asettelu */
+    justify-content: space-between; /* Jakaa tilan tasaisesti */
+    padding: 20px; /* Sisennys */
+    background-color: #eef1f4; /* Vaalea harmaa tausta */
+    flex-wrap: wrap; /* Mahdollistaa elementtien siirtymisen allekkain pienemmillä näytöillä */
+}
+
+/* Määrittää yhteydenotto-sivun vasemman ja oikean osan ulkoasun */
+.contact-left, .contact-right {
+    width: 48%; /* Leveys 48% */
+}
+
+/* Määrittää yhteydenotto-sivun vasemman osan ulkoasun */
+.contact-left {
+    display: flex; /* Flexbox-asettelu */
+    flex-direction: column; /* Flexbox-suunta pystysuunnassa */
+}
+
+/* Määrittää yhteydenottolomakkeen ulkoasun */
+.contact-form {
+    margin-top: 20px; /* Marginaali ylhäältä */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px; /* Marginaali alhaalta */
+}
+
+.contact-form label {
+    display: block; /* Näyttää elementtinä */
+    margin-bottom: 5px; /* Marginaali alhaalta */
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%; /* Leveys 100% */
+    padding: 10px; /* Sisennys */
+    margin-bottom: 10px; /* Marginaali alhaalta */
+    border: 1px solid #ccc; /* Reunaviiva */
+    border-radius: 5px; /* Pyöristetyt kulmat */
+}
+
+.contact-form button {
+    padding: 10px 20px; /* Sisennys */
+    background-color: #48D1CC; /* Taustaväri */
+    color: black; /* Tekstin väri */
+    border: none; /* Poistaa reunaviivat */
+    border-radius: 5px; /* Pyöristetyt kulmat */
+    cursor: pointer; /* Vaihtaa osoittimen kursoriksi */
+}
+
+.contact-form button:hover {
+    background-color: #3cb0ac; /* Taustaväri hover-tilassa */
+}
+
+/* Määrittää yhteydenotto-sivun oikean osan kuvan ulkoasun */
+.contact-right img {
+    max-width: 100%; /* Maksimileveys 100% */
+    height: auto; /* Automaattinen korkeus */
+    width: 100px; /* Leveys 100px */
+    height: 100px; /* Korkeus 100px */
+}
+
+/* Määrittää yhteydenotto-sivun yhteystietojen ulkoasun */
+.contact-info {
+    margin-top: 10px; /* Marginaali ylhäältä */
+}
+
+/* Responsiiviset tyylit */
+@media (max-width: 768px) {
+    .contact-left, .contact-right {
+        width: 100%; /* Leveys 100% pienemmillä näytöillä */
+    }
+}
+
+/* Lisää tämä osio */
+.info-text {
+    padding-top: 25px; /* Lisää sisennys ylös */
+}

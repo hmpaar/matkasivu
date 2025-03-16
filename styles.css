@@ -1,0 +1,234 @@
+/* Määrittää sivuston ulkoasun */
+body {
+    background-color: #eef1f4; /* Vaalea harmaa tausta, jos kuvan lataus epäonnistuu */
+    font-family: Arial, sans-serif; /* Fontti */
+    display: flex; /* Flexbox-asettelu */
+    flex-direction: column; /* Flexbox-suunta pystysuunnassa */
+    min-height: 100vh; /* Vähimmäiskorkeus 100% näkymäkorkeudesta */
+    margin: 0; /* Poistaa oletusmarginaalit */
+}
+
+/* Määrittää sivuston ylä- ja alatunnisteen ulkoasun */
+.header, .footer {
+    background-color: #48D1CC; /* Taustaväri */
+    color: black; /* Tekstin väri */
+    text-align: center; /* Tekstin keskitys */
+    padding: 15px 0; /* Sisennys ylhäältä ja alhaalta */
+}
+
+/* Määrittää yläreunan ulkoasun */
+.header {
+    position: sticky; /* Kiinnittää yläreunaan */
+    top: 0; /* Yläreunaan kiinnitys */
+    width: 100%; /* Leveys 100% */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: space-between; /* Jakaa tilan tasaisesti */
+    align-items: center; /* Kohdistaa keskelle pystysuunnassa */
+    padding: 10px 20px; /* Lisää hieman tilaa reunoille */
+    z-index: 1000; /* Lisää tämä rivi */
+}
+
+/* Määrittää otsikon ulkoasun */
+.header h1 {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    text-align: center; /* Tekstin keskitys */
+}
+
+/* Määrittää navigaatiopalkin ulkoasun */
+.navbar {
+    background-color: transparent; /* Poistaa ylimääräisen värityksen */
+}
+
+/* Määrittää navigaatiopalkin avauspainikkeen ulkoasun */
+.navbar-toggler {
+    border: none; /* Poistaa laatikkoviivat */
+}
+
+/* Määrittää navigaatiopalkin avauspainikkeen kuvan */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Määrittää alatunnisteen ulkoasun */
+.footer {
+    margin-top: auto; /* Työntää alatunnisteen alas */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    align-items: center; /* Keskittää pystysuunnassa */
+    padding: 10px 20px; /* Sisennys */
+}
+
+/* Määrittää alatunnisteen osat */
+.footer-left, .footer-center, .footer-right {
+    display: flex; /* Flexbox-asettelu */
+    align-items: center; /* Keskittää pystysuunnassa */
+}
+
+/* Määrittää alatunnisteen vasemman osan */
+.footer-left {
+    flex: 1; /* Kasvaa täyttämään tilan */
+}
+
+/* Määrittää alatunnisteen keskiosan */
+.footer-center {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    text-align: center; /* Tekstin keskitys */
+}
+
+/* Määrittää alatunnisteen oikean osan */
+.footer-right {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    justify-content: flex-end; /* Kohdistaa oikealle */
+    text-align: center; /* Tekstin keskitys pystysuunnassa */
+    padding-top: 10px; /* Sisennys ylhäältä */
+}
+
+/* Sosiaalisten medioiden ikonien tyylit */
+.social-icon {
+    font-size: 30px; /* Fonttikoko */
+    margin: 0 10px; /* Marginaali */
+    color: black; /* Tekstin väri */
+}
+
+/* Logon tyylit */
+.logo {
+    width: 50px; /* Leveys */
+    height: auto; /* Automaattinen korkeus */
+}
+
+/* Sisällön tyylit */
+.content {
+    text-align: center; /* Tekstin keskitys */
+    padding: 0; /* Poistaa oletusmarginaalit */
+}
+
+/* Määrittää sankarisection ulkoasun */
+.hero-section {
+    background-size: cover; /* Taustakuvan skaalaus */
+    background-position: center; /* Taustakuvan sijainti */
+    min-height: 30vh; /* Vähimmäiskorkeus 30% ruudusta */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    align-items: center; /* Keskittää pystysuunnassa */
+    padding: 20px; /* Lisää hieman tilaa ympärille */
+}
+
+/* Määrittää tekstilaatikon ulkoasun */
+.text-box {
+    background-color: rgba(226, 224, 224, 0.5); /* Harmaa tausta */
+    padding: 20px; /* Sisennys */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    width: 40%; /* Leveys 40% */
+    margin: 20px auto; /* Keskittää vaakasuunnassa */
+}
+
+/* Sisällön otsikon tyylit */
+h1, p {
+    color: black; /* Tekstin väri */
+}
+
+/* Määrittää kuvasession ulkoasun */
+.image-section {
+    display: flex; /* Flexbox-asettelu */
+    justify-content: space-around; /* Jakaa tilan tasaisesti */
+    padding: 20px; /* Sisennys */
+    background-color: #eef1f4; /* Vaalea harmaa tausta */
+}
+
+/* Määrittää kuvalohkon ulkoasun */
+.image-block {
+    flex: 0 0 45%; /* Pienennä korttien leveyttä */
+    margin: 10px; /* Marginaali */
+    text-align: center; /* Tekstin keskitys */
+    background-color: white; /* Taustaväri */
+    padding: 20px; /* Sisennys */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Varjostus */
+}
+
+/* Määrittää kuvalohkon otsikon ulkoasun */
+.image-block h2 {
+    margin-bottom: 10px; /* Marginaali alhaalta */
+}
+
+/* Määrittää kuvalohkon tekstin ulkoasun */
+.image-block p {
+    margin-bottom: 20px; /* Marginaali alhaalta */
+}
+
+/* Määrittää responsiivisen kuvan ulkoasun */
+.responsive-image {
+    width: 60%; /* Asettaa kuvan leveyden kortin leveydeksi */
+    height: auto; /* Automaattinen korkeus */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    max-height: 200px; /* Asettaa kuvan maksimikorkeuden */
+    object-fit: cover; /* Leikkaa kuvan, jotta se täyttää kortin */
+}
+
+/* Määrittää karusellin ohjainten ulkoasun */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Voit muuttaa tämän haluamaksesi väriksi */
+    border-radius: 50%; /* Pyöristetyt kulmat */
+    padding: 10px; /* Sisennys */
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px; /* Leveys */
+    height: 12px; /* Korkeus */
+    border-radius: 50%; /* Muuttaa indikaattorit ympyrän muotoisiksi */
+    background-color: gray; /* Voit muuttaa tämän haluamaksesi väriksi */
+}
+
+/* Määrittää aktiivisen karuselli-indikaattorin ulkoasun */
+.carousel-indicators .active {
+    background-color: #48D1CC; /* Muuttaa aktiivisen indikaattorin värin samaksi kuin footer ja header */
+}
+
+/* Määrittää modaalin sisällön rivin ulkoasun */
+.modal-body .row {
+    display: flex; /* Flexbox-asettelu */
+    justify-content: space-around; /* Jakaa tilan tasaisesti */
+    padding: 20px; /* Sisennys */
+}
+
+/* Määrittää modaalin sisällön kolumnin ulkoasun */
+.modal-body .col-md-4 {
+    text-align: center; /* Tekstin keskitys */
+    background-color: white; /* Taustaväri */
+    padding: 20px; /* Sisennys */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Varjostus */
+    margin: 10px; /* Marginaali */
+}
+
+/* Määrittää modaalin sisällön kolumnin otsikon ulkoasun */
+.modal-body .col-md-4 h6 {
+    margin-bottom: 10px; /* Marginaali alhaalta */
+}
+
+/* Määrittää modaalin sisällön kolumnin tekstin ulkoasun */
+.modal-body .col-md-4 p {
+    margin-bottom: 20px; /* Marginaali alhaalta */
+}
+
+/* Määrittää modaalin sisällön kolumnin responsiivisen kuvan ulkoasun */
+.modal-body .col-md-4 .responsive-image {
+    width: 100%; /* Leveys 100% */
+    height: auto; /* Automaattinen korkeus */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+}
+
+/* Responsiiviset tyylit */
+@media (max-width: 768px) {
+    .text-box {
+        width: 70%; /* Leveys 70% pienemmillä näytöillä */
+    }
+    .responsive-image {
+        width: 60%; /* Asettaa kuvan leveyden kortin leveydeksi */
+        height: 100px; /* Asettaa kuvan maksimikorkeuden */
+        object-fit: cover; /* Leikkaa kuvan, jotta se täyttää kortin */
+        border-radius: 10px; /* Pyöristetyt kulmat */
+    }
+}

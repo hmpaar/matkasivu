@@ -1,0 +1,225 @@
+/* Määrittää sivuston ulkoasun */
+body {
+    background-color: #eef1f4; /* Vaalea harmaa tausta, jos kuvan lataus epäonnistuu */
+    font-family: Arial, sans-serif; /* Fontti */
+    background-image: url('kuvat/Taustakuva.jpg'); /* Taustakuva */
+    background-size: cover; /* Taustakuvan skaalaus */
+    background-position: center; /* Taustakuvan sijainti */
+    display: flex; /* Flexbox-asettelu */
+    flex-direction: column; /* Flexbox-suunta pystysuunnassa */
+    min-height: 100vh; /* Vähimmäiskorkeus 100% näkymäkorkeudesta */
+    margin: 0; /* Poistaa oletusmarginaalit */
+}
+
+/* Määrittää sivuston ylä- ja alatunnisteen ulkoasun */
+.header, .footer {
+    background-color: #48D1CC; /* Taustaväri */
+    color: black; /* Tekstin väri */
+    text-align: center; /* Tekstin keskitys */
+    padding: 15px 0; /* Sisennys ylhäältä ja alhaalta */
+}
+
+/* Määrittää yläreunan ulkoasun */
+.header {
+    position: sticky; /* Kiinnittää yläreunaan */
+    top: 0; /* Yläreunaan kiinnitys */
+    width: 100%; /* Leveys 100% */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: space-between; /* Jakaa tilan tasaisesti */
+    align-items: center; /* Kohdistaa keskelle pystysuunnassa */
+    padding: 10px 20px; /* Lisää hieman tilaa reunoille */
+}
+
+/* Määrittää otsikon ulkoasun */
+.header h1 {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    text-align: center; /* Tekstin keskitys */
+}
+
+/* Määrittää navigaatiopalkin ulkoasun */
+.navbar {
+    background-color: transparent; /* Poistaa ylimääräisen värityksen */
+}
+
+/* Määrittää navigaatiopalkin avauspainikkeen ulkoasun */
+.navbar-toggler {
+    border: none; /* Poistaa laatikkoviivat */
+}
+
+/* Määrittää navigaatiopalkin avauspainikkeen kuvan */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Dropdown-ikonin kuva */
+}
+
+/* Dropdown-valikon tyylit */
+.navbar-nav {
+    position: relative; /* Suhteellinen sijainti */
+}
+
+/* Dropdown-valikon tyylit */
+.navbar-nav .dropdown-menu {
+    position: absolute; /* Absoluuttinen sijainti */
+    top: 100%; /* Sijainti ylhäältä */
+    left: 0; /* Sijainti vasemmalta */
+    display: none; /* Piilotettu oletuksena */
+    background-color: #48D1CC; /* Taustaväri */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Varjostus */
+}
+
+/* Näyttää valikon kun avattu */
+.navbar-toggler[aria-expanded="true"] + .dropdown-menu {
+    display: block; /* Näyttää valikon kun avattu */
+}
+
+/* Dropdown-valikon linkkien tyylit */
+.navbar-nav .dropdown-item {
+    color: black; /* Tekstin väri */
+    padding: 10px 20px; /* Sisennys */
+    text-decoration: none; /* Poistaa alleviivauksen */
+    display: block; /* Näyttää elementtinä */
+}
+
+/* Dropdown-valikon linkkien hover-tyylit */
+.navbar-nav .dropdown-item:hover {
+    background-color: #d8dbde; /* Taustaväri hover-tilassa */
+}
+
+/* Määrittää alatunnisteen ulkoasun */
+.footer {
+    margin-top: auto; /* Työntää alatunnisteen alas */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    align-items: center; /* Keskittää pystysuunnassa */
+    padding: 10px 20px; /* Sisennys */
+}
+
+/* Määrittää alatunnisteen osat */
+.footer-left, .footer-center, .footer-right {
+    display: flex; /* Flexbox-asettelu */
+    align-items: center; /* Keskittää pystysuunnassa */
+}
+
+/* Määrittää alatunnisteen vasemman osan */
+.footer-left {
+    flex: 1; /* Kasvaa täyttämään tilan */
+}
+
+/* Määrittää alatunnisteen keskiosan */
+.footer-center {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    text-align: center; /* Tekstin keskitys */
+}
+
+/* Määrittää alatunnisteen oikean osan */
+.footer-right {
+    flex: 1; /* Kasvaa täyttämään tilan */
+    justify-content: flex-end; /* Kohdistaa oikealle */
+    text-align: center; /* Tekstin keskitys pystysuunnassa */
+    padding-top: 10px; /* Sisennys ylhäältä */
+}
+
+/* Sosiaalisten medioiden ikonien tyylit */
+.social-icon {
+    font-size: 30px; /* Fonttikoko */
+    margin: 0 10px; /* Marginaali */
+    color: black; /* Tekstin väri */
+}
+
+/* Logon tyylit */
+.logo {
+    width: 50px; /* Leveys */
+    height: auto; /* Automaattinen korkeus */
+}
+
+/* Sisällön tyylit */
+.content {
+    text-align: center; /* Tekstin keskitys */
+    padding: 50px; /* Sisennys */
+}
+
+/* Sisällön otsikon tyylit */
+h1, p {
+    color: black; /* Tekstin väri */
+}
+
+/* Tekstin tyylit */
+.text-box {
+    background-color: rgba(226, 224, 224, 0.5); /* Harmaa tausta */
+    padding: 20px; /* Sisennys */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    width: 40%; /* Leveys 40% */
+    margin: 20px auto; /* Keskittää vaakasuunnassa */
+}
+
+/* Keskittää modaalin */
+.modal-dialog {
+    display: flex; /* Flexbox-asettelu */
+    align-items: center; /* Keskittää pystysuunnassa */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    min-height: calc(100vh - 1rem); /* Vähimmäiskorkeus */
+}
+
+/* Pikkukuvan asetukset */
+.small-image {
+    max-width: 40px; /* Maksimileveys */
+    max-height: 40px; /* Maksimikorkeus */
+    display: block; /* Näyttää elementtinä */
+    margin: 10px auto; /* Keskittää vaakasuunnassa ja lisää marginaalin */
+}
+
+.link-container {
+    display: flex; /* Flexbox-asettelu */
+    align-items: center; /* Keskittää pystysuunnassa */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+    gap: 10px; /* Väli tekstin ja kuvan välillä */
+}
+
+/* Modaalin taustan tyylit */
+.globe-icon {
+    margin-top: 20px; /* Marginaali ylhäältä */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskittää vaakasuunnassa */
+}
+
+/* Kartan tyylit */
+.map-container {
+    position: relative; /* Suhteellinen sijainti */
+    width: 100%; /* Leveys 100% */
+    padding-top: 75%; /* 4:3 kuvasuhde */
+}
+
+/* Kartan kuvan tyylit */
+.map-container img {
+    position: absolute; /* Absoluuttinen sijainti */
+    top: 0; /* Sijainti ylhäältä */
+    left: 0; /* Sijainti vasemmalta */
+    width: 100%; /* Leveys 100% */
+    height: 100%; /* Korkeus 100% */
+    object-fit: contain; /* Muuttaa cover -> contain */
+}
+
+/* Kartan klikattavien alueiden tyylit */
+.clickable-area {
+    position: absolute; /* Absoluuttinen sijainti */
+    cursor: pointer; /* Kursori osoittimeksi */
+    opacity: 0; /* Läpinäkyvä */
+}
+
+/* Eurooppa */
+#europe1 { top: 25%; left: 42%; width: 12%; height: 7%; }  
+#europe2 { top: 32%; left: 46%; width: 12%; height: 5%; } 
+#europe3 { top: 37%; left: 46%; width: 20%; height: 7%; } 
+
+/* Suomi */
+#finland { top: 25%; left: 53%; width: 5%; height: 7%; } 
+
+/* Japani */
+#japan1 { top: 33%; left: 87%; width: 10%; height: 17%; }
+
+/* Responsiiviset tyylit */
+@media (max-width: 768px) {
+    .text-box {
+        width: 70%; /* Leveys 70% pienemmillä näytöillä */
+    }
+}

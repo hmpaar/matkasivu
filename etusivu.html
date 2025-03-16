@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8"> <!-- Määrittää dokumentin merkistön UTF-8:ksi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsiivinen asettelu -->
+    <title>ReissuUnelmat</title> <!-- Sivun otsikko -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="etusivu.css"> <!-- Oma tyylitiedosto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome ikonit -->
+</head>
+<body>
+    <header class="header"> <!-- Sivun yläosa -->
+        <nav class="navbar"> <!-- Navigointipalkki -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <!-- Dropdown-nappi -->
+                <span class="navbar-toggler-icon"></span> <!-- Ikoni dropdown-napille -->
+            </button>
+            <ul class="dropdown-menu"> <!-- Dropdown-valikko -->
+                <li><a class="dropdown-item" href="etusivu.html">Etusivu</a></li> <!-- Linkki etusivulle -->
+                <li><a class="dropdown-item" href="suomi.html">Suomi</a></li> <!-- Linkki Suomi-sivulle -->
+                <li><a class="dropdown-item" href="eurooppa.html">Eurooppa</a></li> <!-- Linkki Eurooppa-sivulle -->
+                <li><a class="dropdown-item" href="japani.html">Japani</a></li> <!-- Linkki Japani-sivulle -->
+                <li><a class="dropdown-item" href="yhteydenotto.html">Yhteydenotto</a></li> <!-- Linkki Yhteydenotto-sivulle -->
+            </ul>
+        </nav>
+        <h1>ReissuUnelmat</h1> <!-- Sivun pääotsikko -->
+    </header>
+    <main class="content"> <!-- Sivun pääsisältö -->
+        <div class="text-box"> <!-- Tekstikontti -->
+            <p>Matkailu on enemmän kuin pelkkää paikasta toiseen siirtymistä. Se on seikkailu, joka avaa ovet uusiin 
+                muistoihin, maisemiin ja makuelämyksiin. Jokainen reissu on tilaisuus kokea jotakin ainutlaatuista, 
+                olipa kyse sitten tunnelmallisista kahviloista Wienissä, upeista maisemista Kolin kansallispuistossa tai 
+                futuristisista kaupunkimaisemista Tokiossa.
+                <br><br>
+                Tältä sivustolta löydät parhaat vinkit ja inspiroivat tarinat, jotka saavat matkakuumeen kohoamaan. 
+                Haluatko tietää, mitkä ovat Euroopan kiehtovimmat kaupunkilomat? Tai mitä Japanissa kannattaa ehdottomasti
+                kokea? Entä mitkä kotimaan kohteet yllättävät taianomaisuudellaan? Sukella mukaan ja löydä seuraava unelmiesi 
+                matkakohde!
+                <br><br>
+                Olitpa sitten spontaani reppureissaaja, tarkkaan suunniteltujen seikkailujen ystävä tai vasta haaveilemassa 
+                seuraavasta matkasta, täältä saat tarvittavan inspiraation. Maailma odottaa oletko valmis lähtemään?</p> <!-- Sivun esittelyteksti -->
+            <div class="map-container"> <!-- Karttakontti -->
+                <img src="kuvat/maailmankartta.png" alt="Maailmankartta" class="img-fluid"> <!-- Maailmankartta kuva -->
+                <!-- Eurooppa -->
+                <div id="europe1" class="clickable-area" onclick="openTab('europe')"></div> <!-- Klikattava alue Euroopalle -->
+                <div id="europe2" class="clickable-area" onclick="openTab('europe')"></div> <!-- Klikattava alue Euroopalle -->
+                <div id="europe3" class="clickable-area" onclick="openTab('europe')"></div> <!-- Klikattava alue Euroopalle -->
+                <!-- Suomi -->
+                <div id="finland" class="clickable-area" onclick="openTab('finland')"></div> <!-- Klikattava alue Suomelle -->
+                <!-- Japani -->
+                <div id="japan1" class="clickable-area" onclick="openTab('japan')"></div> <!-- Klikattava alue Japanille -->
+                <div id="japan2" class="clickable-area" onclick="openTab('japan')"></div> <!-- Klikattava alue Japanille -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer"> <!-- Sivun alatunniste -->
+        <div class="footer-left"> <!-- Alatunnisteen vasen osa -->
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram social-icon"></i></a> <!-- Instagram-linkki -->
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f social-icon"></i></a> <!-- Facebook-linkki -->
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok social-icon"></i></a> <!-- TikTok-linkki -->
+        </div>
+        <div class="footer-center"> <!-- Alatunnisteen keskiosa -->
+            <img src="kuvat/logo.png" alt="Logo" class="logo"> <!-- Logo -->
+        </div>
+        <div class="footer-right"> <!-- Alatunnisteen oikea osa -->
+            <p>© 2025 ReissuUnelmat</p> <!-- Tekijänoikeustiedot -->
+        </div>
+    </footer>
+    <!-- Bootstrap Modalit -->
+    <div class="modal fade" id="europeModal" tabindex="-1" aria-hidden="true"> <!-- Eurooppa-modali -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Eurooppa - Loputtomasti elämyksiä yhdessä maanosassa</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <p>Eurooppa on kuin aarrearkku täynnä monipuolisia matkakohteita - jokainen maa tarjoaa oman uniikin 
+                    tunnelmansa, historiansa ja makuelämyksensä. Voit viettää päivän historiallisissa maisemissa Roomassa, 
+                    kävellä ja ihastella arkkitehtuuria Wienissä tai kokea Venetsian ainutlaatuisen tunnelman. Toisaalta modernit 
+                    metropolit kuten Berliini ja Barcelona sykkivät trendikästä kaupunkikulttuuria, upeita makuja ja yllättäviä 
+                    elämyksiä.
+                    <br><br>
+                    Olipa unelmissasi sitten viikonloppuloma, roadtrip upeiden maisemien halki tai pidempi irtiotto arjesta, 
+                    Euroopasta löytyy aina jotain uutta ja jännittävää. Yksi matka ei koskaan riitä - ja siksi Eurooppaan tekee 
+                    mieli palata aina uudelleen.</p><!-- Modalin sisältö -->
+                    <div class="link-container">
+                        <span>Tutustu lisää:</span>
+                        <a href="eurooppa.html">
+                            <img src="kuvat/Wien.jpg" alt="Koli" class="small-image"> <!-- Pieni kuva -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="finlandModal" tabindex="-1" aria-hidden="true"> <!-- Suomi-modali -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Suomi - Seikkailuja jokaiseen vuodenaikaan</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <p>Suomi on täynnä unohtumattomia elämyksiä. Olitpa sitten kaupunkikierroksella Helsingissä, patikoimassa 
+                    Lapin erämaassa tai rentoutumassa järven rannalla keskiyön auringon alla. Talvella voit sukeltaa 
+                    lumisiin satumaisemiin, ihailla revontulia ja kokea maailman parhaat löylyt perinteisessä saunassa. 
+                    Kesällä taas luonto herää eloon - tuhannet järvet, vehreät metsät ja idylliset saaristokylät tarjoavat 
+                    täydellisen pakopaikan arjesta.
+                    <br><br>
+                    Kaupunkielämässä sykkii moderni design, kiehtova historia ja herkullinen ruokakulttuuri, jossa yhdistyvät 
+                    perinteiset maut ja uudet innovaatiot. Olitpa sitten aktiivilomailija, luonnon rauhaa rakastava tai 
+                    kaupunkikulttuurin ystävä, Suomessa odottaa loputon määrä seikkailuja vuoden jokaisena päivänä.</p> <!-- Modalin sisältö -->
+                    <div class="link-container">
+                        <span>Tutustu lisää:</span>
+                        <a href="suomi.html">
+                            <img src="kuvat/Koli.jpg" alt="Koli" class="small-image"> <!-- Pieni kuva -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="japanModal" tabindex="-1" aria-hidden="true"> <!-- Japani-modali -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Japani – Perinteitä, futurismia ja ainutlaatuisia elämyksiä</h5> <!-- Modalin otsikko -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button> <!-- Sulkemisnappi -->
+                </div>
+                <div class="modal-body">
+                    <p>Japani on maa, jossa ikivanhat temppelit ja neonvalojen täyttämät suurkaupungit elävät sulassa sovussa. 
+                    Tokion huikeat pilvenpiirtäjät, Kioton historialliset kadut ja Osakan eläväinen ruokakulttuuri tekevät 
+                    jokaisesta matkasta ainutlaatuisen. Täällä voit aamulla vaeltaa sumuisten bambumetsien halki ja illalla 
+                    kokea futuristisen robottiravintolan. Japani on täynnä vastakohtia, jotka tekevät siitä lumoavan matkakohteen.
+                    <br><br>
+                    Mutta Japani on muutakin kuin suurkaupunkeja. Sieltä löytyy myös rauhallisia maaseutumaisemia, lumihuippuisia
+                    vuoria, kuumia lähteitä ja henkeäsalpaavan kauniita saaristoja. Olitpa sitten herkullisen ruoan ystävä, kulttuurin 
+                    tutkija tai luonnon ihailija, Japani tarjoaa matkan, joka jää mieleen ikuisesti.</p> <!-- Modalin sisältö -->
+                    <div class="link-container">
+                        <span>Tutustu lisää:</span>
+                        <a href="japani.html">
+                            <img src="kuvat/Tokio.jpg" alt="Koli" class="small-image"> <!-- Pieni kuva -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(region) { <!-- Funktio modaalin avaamiseen -->
+            let modalId = region + "Modal";
+            let modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
+</body>
+</html>
