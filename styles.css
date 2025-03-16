@@ -108,7 +108,7 @@ body {
 .hero-section {
     background-size: cover; /* Taustakuvan skaalaus */
     background-position: center; /* Taustakuvan sijainti */
-    min-height: 30vh; /* Vähimmäiskorkeus 30% ruudusta */
+    min-height: 70vh; /* Vähimmäiskorkeus 30% ruudusta */
     display: flex; /* Flexbox-asettelu */
     justify-content: center; /* Keskittää vaakasuunnassa */
     align-items: center; /* Keskittää pystysuunnassa */
