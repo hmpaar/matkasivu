@@ -148,7 +148,7 @@ h1, p {
     background-color: rgba(226, 224, 224, 0.5); /* Harmaa tausta */
     padding: 20px; /* Sisennys */
     border-radius: 10px; /* Pyöristetyt kulmat */
-    width: 40%; /* Leveys 40% */
+    width: 50%; /* Leveys 50% */
     margin: 20px auto; /* Keskittää vaakasuunnassa */
 }
 
@@ -218,13 +218,18 @@ h1, p {
 #japan1 { top: 33%; left: 87%; width: 10%; height: 17%; }
 
 /* Responsiiviset tyylit */
+@media (max-width: 1024px) {
+    .text-box {
+        width: 65%; /* Leveys 70% pienemmillä näytöillä */
+    }
+}
 @media (max-width: 768px) {
     .text-box {
-        width: 70%; /* Leveys 70% pienemmillä näytöillä */
+        width: 75%; /* Leveys 80% pienemmillä näytöillä */
     }
 }
 @media (max-width: 480px) {
     .text-box {
-        width: 90%; /* Leveys 90% pienimmillä näytöillä */
+        width: 90%; /* Leveys 90% pienemmillä näytöillä */
     }
 }
