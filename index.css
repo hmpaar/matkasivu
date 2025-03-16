@@ -231,5 +231,7 @@ h1, p {
 @media (max-width: 480px) {
     .text-box {
         width: 90%; /* Leveys 90% pienemmillä näytöillä */
+        font-size: 1.2em; /* Suurentaa tekstin kokoa */
+        line-height: 1.5; /* Lisää riviväliä */
     }
 }
