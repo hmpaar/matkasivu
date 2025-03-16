@@ -224,7 +224,7 @@ h1, p {
     }
 }
 @media (max-width: 480px) {
-    .content {
+    .text-box {
         transform: scale(0.8); /* Pienentää koko ruutua 80% */
         transform-origin: top left; /* Asettaa skaalauspisteen vasempaan yläkulmaan */
     }
