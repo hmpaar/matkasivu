@@ -227,7 +227,7 @@ h1, p {
     .text-box {
         width: 80%; /* Leveys 70% pienemmillä näytöillä */
     }
-    html {
+    body {
         transform: scale(0.8); /* Pienentää koko ruutua 80% */
         transform-origin: top left; /* Asettaa skaalauspisteen vasempaan yläkulmaan */
     }
