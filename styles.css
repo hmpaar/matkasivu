@@ -164,7 +164,7 @@ h1, p {
 
 /* Määrittää responsiivisen kuvan ulkoasun */
 .responsive-image {
-    width: 60%; /* Asettaa kuvan leveyden kortin leveydeksi */
+    width: 70%; /* Asettaa kuvan leveyden kortin leveydeksi */
     height: auto; /* Automaattinen korkeus */
     border-radius: 10px; /* Pyöristetyt kulmat */
     max-height: 250px; /* Asettaa kuvan maksimikorkeuden */
