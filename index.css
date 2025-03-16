@@ -230,7 +230,7 @@ word-break: break-word;
 }
 @media (max-width: 768px) {
     .text-box {
-        width: 75%; /* Leveys 80% pienemmillä näytöillä */
+        width: 75%; /* Leveys 75% pienemmillä näytöillä */
     }
 }
 @media (max-width: 480px) {

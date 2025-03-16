@@ -186,6 +186,14 @@ h1, p {
     background-color: #48D1CC; /* Muuttaa aktiivisen indikaattorin värin samaksi kuin footer ja header */
 }
 
+.carousel-indicators {
+    position: absolute; /* Asettaa absoluuttisen sijainnin */
+    left: 35%; /* Keskittää vaakasuunnassa */
+    transform: translateX(-50%); /* Keskittää vaakasuunnassa */
+    bottom: -20px; /* Asettaa etäisyyden alareunasta */
+    padding-top: 0; /* Poistaa ylimääräisen sisennyksen ylhäältä */
+}
+
 /* Määrittää modaalin sisällön rivin ulkoasun */
 .modal-body .row {
     display: flex; /* Flexbox-asettelu */
@@ -239,13 +247,16 @@ h1, p {
 .modal-body .single-item {
     text-align: center; /* Tekstin keskitys */
     background-color: white; /* Taustaväri */
-    padding: 20px; /* Sisennys */
+    padding: 10px; /* Sisennys */
     border-radius: 10px; /* Pyöristetyt kulmat */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Varjostus */
     margin: 10px; /* Marginaali */
-    max-width: 50%; /* Maksimileveys */
-    width: 80%; /* Leveys 80% */
+    width: 70%; /* Leveys 70% */
     margin: 0 auto; /* Keskittää vaakasuunnassa */
+}
+.centered-text {
+    text-align: center; /* Keskittää tekstin */
+    margin-top: 20px; /* Lisää marginaalia yläpuolelle */
 }
 
 /* Responsiiviset tyylit */
@@ -274,19 +285,12 @@ h1, p {
 }
 @media (max-width: 768px) {
     .text-box {
-        width: 75%; /* Leveys 80% pienemmillä näytöillä */
+        width: 75%; /* Leveys 75% pienemmillä näytöillä */
     }
 }
 @media (max-width: 480px) {
     .text-box {
         width: 90%; /* Leveys 90% pienemmillä näytöillä */
         font-size: 1.2em; /* Suurentaa tekstin kokoa */
-    }.image-block {
-        flex: 0 0 90%; /* Asettaa kortin leveydeksi 100% */
-        margin: 10px 0; /* Lisää marginaalin ylhäältä ja alhaalta */
-    }
-    .image-section {
-        flex-direction: column; /* Asettaa kortit allekkain */
-        align-items: center; /* Keskittää kortit */
     }
 }
