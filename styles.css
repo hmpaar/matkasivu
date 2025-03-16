@@ -138,7 +138,7 @@ h1, p {
 
 /* Määrittää kuvalohkon ulkoasun */
 .image-block {
-    flex: 0 0 45%; /* Pienennä korttien leveyttä */
+    flex: 0 0 40%; /* Pienennä korttien leveyttä */
     margin: 10px; /* Marginaali */
     text-align: center; /* Tekstin keskitys */
     background-color: white; /* Taustaväri */
@@ -164,6 +164,7 @@ h1, p {
     border-radius: 10px; /* Pyöristetyt kulmat */
     max-height: 200px; /* Asettaa kuvan maksimikorkeuden */
     object-fit: cover; /* Leikkaa kuvan, jotta se täyttää kortin */
+    padding: 10px;
 }
 
 /* Määrittää karusellin ohjainten ulkoasun */
@@ -171,7 +172,6 @@ h1, p {
 .carousel-control-next-icon {
     background-color: black; /* Voit muuttaa tämän haluamaksesi väriksi */
     border-radius: 50%; /* Pyöristetyt kulmat */
-    padding: 10px; /* Sisennys */
 }
 
 .carousel-indicators [data-bs-target] {
@@ -274,18 +274,20 @@ h1, p {
 /* Responsiiviset tyylit */
 @media (max-width: 1024px) {
     .text-box {
-        width: 65%; /* Leveys 70% pienemmillä näytöillä */
-    }
-    .responsive-image {
-        width: 60%; /* Asettaa kuvan leveyden kortin leveydeksi */
-        height: 100px; /* Asettaa kuvan maksimikorkeuden */
-        object-fit: cover; /* Leikkaa kuvan, jotta se täyttää kortin */
-        border-radius: 10px; /* Pyöristetyt kulmat */
+        width: 65%; /* Leveys 65% pienemmillä näytöillä */
     }
 }
 @media (max-width: 768px) {
     .text-box {
         width: 75%; /* Leveys 75% pienemmillä näytöillä */
+    }
+    .image-block {
+        flex: 0 0 90%; /* Asettaa kortin leveydeksi 100% */
+        margin: 10px 0; /* Lisää marginaalin ylhäältä ja alhaalta */
+    }
+    .image-section {
+        flex-direction: column; /* Asettaa kortit allekkain */
+        align-items: center; /* Keskittää kortit */
     }
 }
 @media (max-width: 480px) {

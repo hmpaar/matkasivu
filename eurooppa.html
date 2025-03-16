@@ -33,7 +33,7 @@
                 sinut täysin uuteen maailmaan. Olipa haaveissasi rantaloma, kulttuurikierros tai kulinaristinen 
                 seikkailu, Euroopassa jokainen matka on omanlaisensa ja täynnä unohtumattomia kokemuksia.</p> <!-- Taustakuvan teksti -->
         </div>
-        <div id="cityCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"></div> <!-- Kuvakaruselli -->
+        <div id="cityCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"> <!-- Kuvakaruselli -->
             <div class="carousel-indicators"> <!-- Karusellin indikaattorit -->
                 <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -49,6 +49,7 @@
                                 kuten Sachertorte. Kulttuuria, historiaa ja eleganttia elämänmenoa - Wien on täydellinen 
                                 kohde kulttuurimatkailijalle.</p> <!-- Kuvan esittelyteksti -->
                             <img src="kuvat/Wien2.jpg" alt="Wien" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city1Modal"> <!-- Kuvan lähde -->
+                            <p><a href="#" data-bs-toggle="modal" data-bs-target="#city1Modal">Lisätietoa</a></p> <!-- Linkki lisätietoihin -->
                         </div>
                         <div class="image-block"> <!-- Kuvablokki -->
                             <h2>Venetsia</h2> <!-- Kuvan otsikko -->
@@ -57,6 +58,7 @@
                                 ajassa taaksepäin. Piazza San Marco ja sen ympäristö ovat täynnä historiaa ja taidetta, 
                                 ja kesäisin Venetsia herää eloon upeilla karnevaaleillaan.</p> <!-- Kuvan esittelyteksti -->
                             <img src="kuvat/Venetsia2.jpg" alt="Venetsia" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city2Modal"> <!-- Kuvan lähde -->
+                            <p><a href="#" data-bs-toggle="modal" data-bs-target="#city2Modal">Lisätietoa</a></p> <!-- Linkki lisätietoihin -->
                         </div>
                     </div>
                 </div>
@@ -70,6 +72,7 @@
                                 elävän museon. Rooma on sekoitus historiaa, taidetta ja italialaista elämäntyyliä, 
                                 joka hurmaa kaikenikäisiä matkailijoita.</p> <!-- Kuvan esittelyteksti -->
                             <img src="kuvat/Kaupunki3.jpg" alt="Kaupunki 3" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city3Modal"> <!-- Kuvan lähde -->
+                            <p><a href="#" data-bs-toggle="modal" data-bs-target="#city3Modal">Lisätietoa</a></p> <!-- Linkki lisätietoihin -->
                         </div>
                         <div class="image-block"> <!-- Kuvablokki -->
                             <h2>Amsterdam</h2> <!-- Kuvan otsikko -->
@@ -79,6 +82,7 @@
                                 ystäville unelmakohteen. Pyöräily, kahvilat ja kaupungin monikulttuurinen tunnelma luovat 
                                 yhdessä ainutlaatuisen matkaelämyksen.</p> <!-- Kuvan esittelyteksti -->
                             <img src="kuvat/Kaupunki4.jpg" alt="Kaupunki 4" class="responsive-image" data-bs-toggle="modal" data-bs-target="#city4Modal"> <!-- Kuvan lähde -->
+                            <p><a href="#" data-bs-toggle="modal" data-bs-target="#city4Modal">Lisätietoa</a></p> <!-- Linkki lisätietoihin -->
                         </div>
                     </div>
                 </div>
@@ -155,7 +159,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="city3Modal" tabindex="-1" aria-labelledby="city3ModalLabel" aria-hidden="true"> <!-- Kaupunki 3-modali -->
+    <div class="modal fade" id="city3Modal" tabindex="-1" aria-labelledby="city3ModalLabel" aria-hidden="true"> <!-- Rooma-modali -->
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -164,20 +168,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-4">
-                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                        <div class="col-md-12 centered-info">
+                            <img src="kuvat/Kohde1.jpg" alt="Rooma" class="responsive-image"> <!-- Kohteen kuva -->
+                            <br><br>
+                            <p>Lisätietoa tulossa tästä kohteesta toukokuussa 2025.</p> <!-- Kohteen esittelyteksti -->
                         </div>
                     </div>
                 </div>
@@ -185,7 +179,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="city4Modal" tabindex="-1" aria-labelledby="city4ModalLabel" aria-hidden="true"> <!-- Kaupunki 4-modali -->
+    <div class="modal fade" id="city4Modal" tabindex="-1" aria-labelledby="city4ModalLabel" aria-hidden="true"> <!-- Amsterdam-modali -->
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -194,20 +188,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-4">
-                            <h6>Kohde 1</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde1.jpg" alt="Kohde 1" class="responsive-image"> <!-- Kohteen kuva -->
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Kohde 2</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde2.jpg" alt="Kohde 2" class="responsive-image"> <!-- Kohteen kuva -->
-                        </div>
-                        <div class="col-md-4">
-                            <h6>Kohde 3</h6> <!-- Kohteen otsikko -->
-                            <p>Tähän esittelyä</p> <!-- Kohteen esittelyteksti -->
-                            <img src="kuvat/Kohde3.jpg" alt="Kohde 3" class="responsive-image"> <!-- Kohteen kuva -->
+                        <div class="col-md-12 centered-info"></div>
+                            <img src="kuvat/Kohde1.jpg" alt="Amsterdam" class="responsive-image"> <!-- Kohteen kuva -->
+                            <br><br>
+                            <p>Lisätietoa tulossa tästä kohteesta toukokuussa 2025.</p> <!-- Kohteen esittelyteksti -->
                         </div>
                     </div>
                 </div>
