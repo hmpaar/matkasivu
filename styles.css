@@ -164,7 +164,8 @@ h1, p {
 
 /* Määrittää responsiivisen kuvan ulkoasun */
 .responsive-image {
-    width: 70%; /* Asettaa kuvan leveyden kortin leveydeksi */
+    min-width: 40%;
+    max-width: 80%; /* Asettaa kuvan leveyden kortin leveydeksi */
     height: auto; /* Automaattinen korkeus */
     border-radius: 10px; /* Pyöristetyt kulmat */
     max-height: 250px; /* Asettaa kuvan maksimikorkeuden */
@@ -299,12 +300,6 @@ h1, p {
         flex: 1; /* Kasvaa täyttämään tilan */
         text-align: start; /* Tekstin keskitys */
         padding-left: 30%;
-    }
-    .responsive-image {
-        width: 60%; /* Asettaa kuvan leveyden kortin leveydeksi */
-        height: 100px; /* Asettaa kuvan maksimikorkeuden */
-        object-fit: cover; /* Leikkaa kuvan, jotta se täyttää kortin */
-        border-radius: 10px; /* Pyöristetyt kulmat */
     }
 }
 @media (max-width: 480px) {
