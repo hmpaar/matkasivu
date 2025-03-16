@@ -1,6 +1,6 @@
 /* Määrittää sivuston ulkoasun */
 body {
-    background-color: #eef1f4; /* Vaalea harmaa tausta, jos kuvan lataus epäonnistuu */
+    background-color: rgb(238, 241, 244); /* Vaalea harmaa tausta, jos kuvan lataus epäonnistuu */
     font-family: Arial, sans-serif; /* Fontti */
     display: flex; /* Flexbox-asettelu */
     flex-direction: column; /* Flexbox-suunta pystysuunnassa */
@@ -116,7 +116,7 @@ body {
 
 /* Määrittää tekstilaatikon ulkoasun */
 .text-box {
-    background-color: rgba(226, 224, 224, 0.5); /* Harmaa tausta */
+    background-color: rgba(238, 241, 244, 0.7); /* Harmaa tausta */
     padding: 20px; /* Sisennys */
     border-radius: 10px; /* Pyöristetyt kulmat */
     width: 40%; /* Leveys 40% */
@@ -133,7 +133,7 @@ h1, p {
     display: flex; /* Flexbox-asettelu */
     justify-content: space-around; /* Jakaa tilan tasaisesti */
     padding: 20px; /* Sisennys */
-    background-color: #eef1f4; /* Vaalea harmaa tausta */
+    background-color: rgba(238, 241, 244); /* Vaalea harmaa tausta */
 }
 
 /* Määrittää kuvalohkon ulkoasun */

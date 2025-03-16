@@ -145,7 +145,7 @@ h1, p {
 
 /* Tekstin tyylit */
 .text-box {
-    background-color: rgba(226, 224, 224, 0.5); /* Harmaa tausta */
+    background-color: rgba(238, 241, 244, 0.7); /* Harmaa tausta */
     padding: 20px; /* Sisennys */
     border-radius: 10px; /* Pyöristetyt kulmat */
     width: 50%; /* Leveys 50% */
@@ -168,6 +168,7 @@ h1, p {
     margin: 10px auto; /* Keskittää vaakasuunnassa ja lisää marginaalin */
 }
 
+/* Linkkien tyylit */
 .link-container {
     display: flex; /* Flexbox-asettelu */
     align-items: center; /* Keskittää pystysuunnassa */

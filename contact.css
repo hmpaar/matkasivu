@@ -1,6 +1,6 @@
 /* Määrittää sivuston ulkoasun */
 body {
-    background-color: #eef1f4; /* Vaalea harmaa tausta */
+    background-color: rgba(238, 241, 244); /* Vaalea harmaa tausta */
     font-family: Arial, sans-serif; /* Fontti */
     display: flex; /* Flexbox-asettelu */
     flex-direction: column; /* Flexbox-suunta pystysuunnassa */
@@ -135,7 +135,7 @@ body {
     display: flex; /* Flexbox-asettelu */
     justify-content: space-between; /* Jakaa tilan tasaisesti */
     padding: 20px; /* Sisennys */
-    background-color: #eef1f4; /* Vaalea harmaa tausta */
+    background-color: rgba(238, 241, 244); /* Vaalea harmaa tausta */
     flex-wrap: wrap; /* Mahdollistaa elementtien siirtymisen allekkain pienemmillä näytöillä */
 }
 
