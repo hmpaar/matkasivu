@@ -299,7 +299,7 @@ h1, p {
     .header h1 {
         flex: 1; /* Kasvaa täyttämään tilan */
         text-align: start; /* Tekstin keskitys */
-        padding-left: 30%;
+        padding-left: 20%;
     }
 }
 @media (max-width: 480px) {
