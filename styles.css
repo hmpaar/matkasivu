@@ -31,8 +31,7 @@ body {
 /* Määrittää otsikon ulkoasun */
 .header h1 {
     flex: 1; /* Kasvaa täyttämään tilan */
-    text-align: start; /* Tekstin keskitys */
-    padding-left: 40%;
+    text-align: center; /* Tekstin keskitys */
 }
 
 /* Määrittää navigaatiopalkin ulkoasun */
@@ -295,10 +294,6 @@ h1, p {
     .image-section {
         flex-direction: column; /* Asettaa kortit allekkain */
         align-items: center; /* Keskittää kortit */
-    }
-    .header h1 {
-        flex: 1; /* Kasvaa täyttämään tilan */
-        text-align: start; /* Tekstin keskitys */
     }
 }
 @media (max-width: 480px) {
